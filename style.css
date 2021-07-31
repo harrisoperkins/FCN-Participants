@@ -1,0 +1,55 @@
+body{
+	background-color: black;
+	font-family: Raleway, sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 0% 15%;
+	padding: 2% 10%;
+	background-color: white;
+	height: 400px;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	font-size: 1.2em;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+.text-input {
+	height: 20px;
+}
+
+#submit {
+	padding: 10px 15px;
+	background-color: white;
+	font-family: Raleway, sans-serif;
+	border: 1px, solid, black;
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	background-color: black;
+	color: white;
+	font-size: 12px;
+}
+
+a {
+	color: white;
+}
