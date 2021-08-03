@@ -25,10 +25,13 @@ window.onload=function(){
         let user_names = [];
         for (let i = 0; i < participants.length; i++) {
           console.log(participants[i].user_name);
-          let name = participants[i].user_name;
+          const name = participants[i].user_name;
           user_names.push(name);
+          const usernamesDiv = document.createElement('div');
+          usernamesDiv.textContent = participants[i].user_name;
+          document.getElementById("usernames").appendChild(usernamesDiv);
         }
-        document.getElementById("usernames").textContent = user_names;
+        //document.getElementById("usernames").textContent = user_names;
       })
       .catch(error => {
         console.error('Error:', error);
