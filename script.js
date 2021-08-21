@@ -30,6 +30,14 @@ window.onload=function(){
         const { participants } = data;
         console.log(participants);
 
+        //if participants are undefined then push error message
+        if (participants == undefined) {
+          const errorDiv = document.createElement('div');
+          errorDiv.setAttribute("class", "userClass")
+          errorDiv.textContent = "Please input a valid Meeting ID";
+          document.getElementById("usernames").appendChild(errorDiv);
+        }
+
         //check if each person's id has already been added, if not push to array and add the element with their username to the page
         let deviceArray = [];
         for (let i = 0; i < participants.length; i++) {
