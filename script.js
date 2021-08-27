@@ -28,7 +28,7 @@ window.onload=function(){
       .then(data => { //handling data
         //get the participants object from the json data
         const { participants } = data;
-        console.log(participants);
+        console.log(data);
 
         //if participants are undefined then push error message
         if (participants == undefined) {
